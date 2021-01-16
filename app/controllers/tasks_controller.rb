@@ -3,8 +3,29 @@ class TasksController < ApplicationController
 
   # GET /tasks
   # GET /tasks.json
+  # GET /tasks.pdf
   def index
     @tasks = Task.all
+
+    respond_to do |format|
+      format.html
+      format.json
+      format.pdf do
+        report = Thinreports::Report.new layout: Rails.root.join('app', 'thinreports', 'templates', 'tasks.tlf')
+
+        @tasks.each do |task|
+          report.list.add_row do |row|
+            row.values no: task.id,
+                       name: task.name,
+                       due_date: task.due_date,
+                       state: task.done? ? 'done' : 'yet'
+            row.item(:name).style(:color, 'red') unless task.done?
+          end
+        end
+
+        send_data report.generate, filename: 'tasks.pdf', type: :pdf
+      end
+    end
   end
 
   # GET /tasks/1
