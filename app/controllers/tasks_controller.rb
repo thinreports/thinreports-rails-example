@@ -30,6 +30,7 @@ class TasksController < ApplicationController
 
   # GET /tasks/1
   # GET /tasks/1.json
+  # GET /tasks/1.pdf
   def show
   end
 

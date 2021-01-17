@@ -56,3 +56,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "thinreports", ">= 0.12"
+
+gem "thinreports-rails", "~> 0.5.0"

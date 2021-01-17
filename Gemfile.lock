@@ -180,6 +180,8 @@ GEM
     thinreports (0.12.0)
       prawn (~> 2.2)
       rexml
+    thinreports-rails (0.5.0)
+      thinreports (>= 0.10)
     thor (1.0.1)
     tilt (2.0.10)
     ttfunk (1.7.0)
@@ -226,6 +228,7 @@ DEPENDENCIES
   spring
   sqlite3 (~> 1.4)
   thinreports (>= 0.12)
+  thinreports-rails (~> 0.5.0)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)

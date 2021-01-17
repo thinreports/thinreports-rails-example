@@ -35,6 +35,13 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should print task" do
+    get task_url(@task, format: "pdf")
+
+    assert_response :success
+    assert_includes response.content_type, "application/pdf"
+  end
+
   test "should get edit" do
     get edit_task_url(@task)
     assert_response :success
