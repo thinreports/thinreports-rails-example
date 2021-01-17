@@ -1,4 +1,6 @@
-FROM ruby:2.7.1
+ARG RUBY_VERSION
+
+FROM ruby:$RUBY_VERSION
 
 # Install yarn
 RUN apt-get update && \
