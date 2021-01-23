@@ -1,13 +1,13 @@
 # Thinreports Rails Example
 
-![CI](https://github.com/thinreports/thinreports-rails-example/workflows/CI/badge.svg)
+[![CI](https://github.com/thinreports/thinreports-rails-example/workflows/CI/badge.svg)](https://github.com/thinreports/thinreports-rails-example/actions?query=branch%3Amaster)
 
 A simple task management application using Thinreports and Rails.
 
 ## Environments
 
-- ruby 2.7, 3.0
-- rails 6.1
+- Ruby 2.7, 3.0
+- Rails 6.1
 - [thinreports-generator](https://github.com/thinreports/thinreports-generator) 0.12.0
 - [thinreports-rails](https://github.com/takeshinoda/thinreports-rails) 0.5.0
 
