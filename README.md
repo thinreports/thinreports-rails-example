@@ -1,5 +1,7 @@
 # Thinreports Rails Example
 
+![CI](https://github.com/thinreports/thinreports-rails-example/workflows/CI/badge.svg)
+
 A simple task management application using Thinreports and Rails.
 
 ## Environments

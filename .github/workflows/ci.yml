@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+  pull_request_target:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test with Ruby ${{ matrix.ruby_version }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby_version:
+          - 2.7
+          - 3.0
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby_version }}
+
+      - name: Gem cache
+        uses: actions/cache@v2
+        with:
+          path: ~/gems
+          key: ${{ matrix.ruby_version }}-gems-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            ${{ matrix.ruby_version }}-gems-
+
+      - name: Bundle
+        run: |
+          gem install bundler
+          bundle config path ~/gems
+          bundle install --jobs 4 --retry 3
+
+      - name: Setup
+        run: bin/rails webpacker:install db:setup
+
+      - name: Run tests
+        run: bin/rails test
