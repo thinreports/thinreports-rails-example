@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BaseReport
   def generate
     build

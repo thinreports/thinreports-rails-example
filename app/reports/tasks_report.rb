@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class TasksReport < BaseReport
   def initialize(tasks)
     @tasks = tasks
