@@ -4,6 +4,10 @@
 
 A simple task management application using Thinreports and Rails.
 
+| Index of tasks | tasks.pdf |
+| --- | --- |
+| <img src="doc/app-tasks.jpeg" height="200"/> | <img src="doc/pdf-tasks.png" height="200" /> |
+
 ## Environments
 
 - Ruby 2.7, 3.0
