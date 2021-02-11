@@ -21,6 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Create a symlink for libffi.so.6 to fix LoadError on `rails db:setup`
+        run: sudo ln -s /usr/lib/x86_64-linux-gnu/libffi.so.7 /usr/lib/x86_64-linux-gnu/libffi.so.6
+
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
