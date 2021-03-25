@@ -70,7 +70,7 @@ GEM
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     erubi (1.10.0)
-    ffi (1.14.2)
+    ffi (1.15.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hashery (2.1.2)
@@ -78,7 +78,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
-    listen (3.4.1)
+    listen (3.5.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.9.0)
@@ -205,7 +205,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   jbuilder (~> 2.11)
-  listen (~> 3.3)
+  listen (~> 3.5)
   pdf-reader
   puma (~> 5.2)
   rack-mini-profiler (~> 2.3)
