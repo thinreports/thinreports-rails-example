@@ -836,10 +836,10 @@
     mkdirp "^1.0.4"
     rimraf "^2.7.1"
 
-"@rails/actioncable@^6.0.0":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.1.tgz#e980b2ea1c62cae17bcddad37deb6ba88d498b63"
-  integrity sha512-A8toxvSuzK/wX9uMwyV6T1EYzlqzIJNrO8XiNCSNsmKresdX2cbAjxFdMu9haaPJPjl3aC2FKRJeVCUWVtLPAQ==
+"@rails/actioncable@^6.1.4":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.4.tgz#c3c5a9f8302c429af9722b6c50ab48049016d2a3"
+  integrity sha512-0LmSKJTuo2dL6BQ+9xxLnS9lbkyfz2mBGeBnQ2J7o9Bn0l0q+ZC6VuoZMZZXPvABI4QT7Nfknv5WhfKYL+boew==
 
 "@rails/activestorage@^6.0.0":
   version "6.1.1"
