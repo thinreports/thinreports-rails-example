@@ -32,8 +32,3 @@ $ docker-compose build
 $ docker-compose run app bin/rails db:setup
 $ docker-compose up -d
 ```
-
-## Community
-
-- [Discussion Group (GitHub Discussions)](https://github.com/thinreports/thinreports/discussions)
-- [Discussion Group (Google Groups)](https://groups.google.com/forum/#!forum/thinreports)
