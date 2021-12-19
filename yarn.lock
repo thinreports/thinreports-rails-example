@@ -1075,22 +1075,22 @@
     mkdirp "^1.0.4"
     rimraf "^2.7.1"
 
-"@rails/actioncable@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.4.tgz#c3c5a9f8302c429af9722b6c50ab48049016d2a3"
-  integrity sha512-0LmSKJTuo2dL6BQ+9xxLnS9lbkyfz2mBGeBnQ2J7o9Bn0l0q+ZC6VuoZMZZXPvABI4QT7Nfknv5WhfKYL+boew==
+"@rails/actioncable@6.1.4-4":
+  version "6.1.4-4"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.4-4.tgz#5978ea03f2ec31ac46d9f63e8c1cb5a05f5002ac"
+  integrity sha512-EGRSboNF4M20LWUpabMfa/YswG+kw6a0xPZmd+ls4eIQS6pEeh1eoSYDyuyiLiTARXiA9PBFYk8+k4PiKHbN6w==
 
-"@rails/activestorage@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-6.1.4.tgz#7772f539cc846df5f4364fc57ccb48860f9e966e"
-  integrity sha512-1Tm8uaVBhLTDEG4YaFPvqguhjbUGSPVItm0CfkRpIFZIkybWzFAxatIrk4YVOOxB8ZdXS7GdeYa1qVwjdiDkgQ==
+"@rails/activestorage@6.1.4-4":
+  version "6.1.4-4"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-6.1.4-4.tgz#5b5ee71827a857800d15086bba33e2c8c5d40995"
+  integrity sha512-geVfXGFh2b29iBXDoQFQ2ifk6geSGQqin+JiawzN03F1NN/VsPaekc8o431lhecH1ktINK3PCxN/zDppBRGdBg==
   dependencies:
     spark-md5 "^3.0.0"
 
-"@rails/ujs@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-6.1.4.tgz#093d5341595a02089ed309dec40f3c37da7b1b10"
-  integrity sha512-O3lEzL5DYbxppMdsFSw36e4BHIlfz/xusynwXGv3l2lhSlvah41qviRpsoAlKXxl37nZAqK+UUF5cnGGK45Mfw==
+"@rails/ujs@6.1.4-4":
+  version "6.1.4-4"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-6.1.4-4.tgz#efc8665e459ed8c28bf606119b245aca8b7a7895"
+  integrity sha512-919TD7HnwPb/KqujqVGUZVmMgbKrz+uXzZeA2pxHviPweuaYce+GzZ5Q+Gmzhzg/UKR0mqvq7AZetZnfxv2DfA==
 
 "@rails/webpacker@5.4.3":
   version "5.4.3"
