@@ -9,6 +9,7 @@ jobs:
   test:
     name: Test with Ruby ${{ matrix.ruby_version }}
     runs-on: ubuntu-latest
+
     # Run this build only on either pull request or push.
     if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
 
@@ -16,13 +17,10 @@ jobs:
       matrix:
         ruby_version:
           - 2.7
-          - 3.0
+          - '3.0'
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Create a symlink for libffi.so.6 to fix LoadError on `rails db:setup`
-        run: sudo ln -s /usr/lib/x86_64-linux-gnu/libffi.so.7 /usr/lib/x86_64-linux-gnu/libffi.so.6
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
@@ -44,7 +42,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Setup
-        run: bin/rails webpacker:install db:setup
+        run: bin/rails db:setup
 
       - name: Run tests
         run: bin/rails test
