@@ -10,13 +10,12 @@ jobs:
     name: Test with Ruby ${{ matrix.ruby_version }}
     runs-on: ubuntu-latest
 
-    # Run this build only on either pull request or push.
     if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
 
     strategy:
       matrix:
         ruby_version:
-          - 2.7
+          - '2.7'
           - '3.0'
 
     steps:
@@ -46,3 +45,18 @@ jobs:
 
       - name: Run tests
         run: bin/rails test
+
+  system-test:
+    name: System Test
+    runs-on: ubuntu-latest
+
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Test
+        run: |
+          docker-compose up -d
+          docker-compose exec -T app rails test:system
+
