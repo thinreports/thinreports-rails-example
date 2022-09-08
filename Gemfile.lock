@@ -197,7 +197,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.4)
+    sqlite3 (1.5.0-x86_64-linux)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
     strscan (3.0.3)
@@ -240,7 +240,7 @@ DEPENDENCIES
   puma (~> 5.6)
   rails (~> 7.0.3)
   sprockets-rails
-  sqlite3 (~> 1.4)
+  sqlite3 (~> 1.5)
   stimulus-rails
   thinreports (>= 0.12)
   thinreports-rails (~> 0.5.0)
