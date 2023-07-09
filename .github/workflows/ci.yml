@@ -21,7 +21,7 @@ jobs:
           - '3.2'
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
@@ -29,7 +29,7 @@ jobs:
           ruby-version: ${{ matrix.ruby_version }}
 
       - name: Gem cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/gems
           key: ${{ matrix.ruby_version }}-gems-${{ hashFiles('Gemfile.lock') }}
