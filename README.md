@@ -8,7 +8,7 @@ A simple task management application using Thinreports and Rails.
 
 ## Environments
 
-- Ruby 2.7, 3.0
+- Ruby 2.7, 3.0, 3.1, 3.2
 - Rails 7.0
 - [thinreports-generator](https://github.com/thinreports/thinreports-generator) 0.12.0
 - [thinreports-rails](https://github.com/takeshinoda/thinreports-rails) 0.5.0
